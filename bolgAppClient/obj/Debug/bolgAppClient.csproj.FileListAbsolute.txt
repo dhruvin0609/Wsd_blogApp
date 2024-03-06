@@ -1,0 +1,14 @@
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\bin\Debug\bolgAppClient.exe.config
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\bin\Debug\bolgAppClient.exe
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\bin\Debug\bolgAppClient.pdb
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.Form1.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.Properties.Resources.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.csproj.GenerateResource.cache
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.exe
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.pdb
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.login.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.HomePage.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.Signup.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.PostCardControl.resources

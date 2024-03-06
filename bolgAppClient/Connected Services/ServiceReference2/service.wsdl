@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="PostService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/blogAppLibrary" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPostService_CreatePost_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePost" />
+  </wsdl:message>
+  <wsdl:message name="IPostService_CreatePost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPostService_UpdatePost_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePost" />
+  </wsdl:message>
+  <wsdl:message name="IPostService_UpdatePost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPostService_GetAllPosts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPosts" />
+  </wsdl:message>
+  <wsdl:message name="IPostService_GetAllPosts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPostsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPostService_GetPostsByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPostsByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IPostService_GetPostsByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPostsByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPostService_DeletePost_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePost" />
+  </wsdl:message>
+  <wsdl:message name="IPostService_DeletePost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePostResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPostService">
+    <wsdl:operation name="CreatePost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPostService/CreatePost" message="tns:IPostService_CreatePost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPostService/CreatePostResponse" message="tns:IPostService_CreatePost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPostService/UpdatePost" message="tns:IPostService_UpdatePost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPostService/UpdatePostResponse" message="tns:IPostService_UpdatePost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPosts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPostService/GetAllPosts" message="tns:IPostService_GetAllPosts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPostService/GetAllPostsResponse" message="tns:IPostService_GetAllPosts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPostsByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPostService/GetPostsByUserId" message="tns:IPostService_GetPostsByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPostService/GetPostsByUserIdResponse" message="tns:IPostService_GetPostsByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePost">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPostService/DeletePost" message="tns:IPostService_DeletePost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPostService/DeletePostResponse" message="tns:IPostService_DeletePost_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPostService" type="tns:IPostService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreatePost">
+      <soap:operation soapAction="http://tempuri.org/IPostService/CreatePost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePost">
+      <soap:operation soapAction="http://tempuri.org/IPostService/UpdatePost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPosts">
+      <soap:operation soapAction="http://tempuri.org/IPostService/GetAllPosts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostsByUserId">
+      <soap:operation soapAction="http://tempuri.org/IPostService/GetPostsByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePost">
+      <soap:operation soapAction="http://tempuri.org/IPostService/DeletePost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PostService">
+    <wsdl:port name="BasicHttpBinding_IPostService" binding="tns:BasicHttpBinding_IPostService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/blogAppLibrary/PostService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
