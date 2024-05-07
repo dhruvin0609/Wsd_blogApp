@@ -148,6 +148,11 @@ namespace blogAppLibrary
             try
             {
                 _connection.Open();
+                using (var command = new SqlCommand("DELETE FROM [dbo].[Comment] WHERE PostId = @PostId", _connection))
+                {
+                    command.Parameters.AddWithValue("@PostId", postId);
+                    command.ExecuteNonQuery();
+                }
                 using (var command = new SqlCommand("DELETE FROM [dbo].[Post] WHERE Id = @PostId", _connection))
                 {
                     command.Parameters.AddWithValue("@PostId", postId);

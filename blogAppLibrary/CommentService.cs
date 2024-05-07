@@ -27,14 +27,14 @@ namespace blogAppLibrary
                 }
             }
         }
-        List<Comment>ICommentService.GetCommentsByPostId(int postId)
+        public List<Comment> GetCommentsByPostId(int postId)
         {
             List<Comment> comments = new List<Comment>();
 
             using (var dbConnection = _connection)
             {
                 dbConnection.Open();
-                using (var command = new SqlCommand("SELECT Id, Content, CreatedAt, PostId, UserId FROM [dbo].[Comment] WHERE PostId = @PostId", dbConnection))
+                using (var command = new SqlCommand("SELECT c.Id, c.Content, c.CreatedAt, c.PostId, c.UserId, u.Username FROM [dbo].[Comment] c INNER JOIN [dbo].[User] u ON c.UserId = u.Id WHERE c.PostId = @PostId", dbConnection))
                 {
                     command.Parameters.AddWithValue("@PostId", postId);
                     using (var reader = command.ExecuteReader())
@@ -47,7 +47,8 @@ namespace blogAppLibrary
                                 Content = reader["Content"].ToString(),
                                 CreatedAt = Convert.ToDateTime(reader["CreatedAt"]),
                                 PostId = Convert.ToInt32(reader["PostId"]),
-                                UserId = Convert.ToInt32(reader["UserId"])
+                                UserId = Convert.ToInt32(reader["UserId"]),
+                                UserName = reader["Username"].ToString()
                             };
                             comments.Add(comment);
                         }
@@ -57,5 +58,6 @@ namespace blogAppLibrary
 
             return comments;
         }
+
     }
 }

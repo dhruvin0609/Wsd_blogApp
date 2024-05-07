@@ -12,3 +12,9 @@ C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.log
 C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.HomePage.resources
 C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.Signup.resources
 C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.PostCardControl.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.PostPage.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.AddCommentForm.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.AddPostForm.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.blogInfo.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.profilePage.resources
+C:\Users\DELL\Downloads\blogAppLibrary\bolgAppClient\obj\Debug\bolgAppClient.SearchPage.resources

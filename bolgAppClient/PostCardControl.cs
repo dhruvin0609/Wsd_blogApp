@@ -21,13 +21,25 @@ namespace bolgAppClient
         {
 
         }
-        public void SetPost(string title, string content)
+        public void SetPost(string title, string content, string username, DateTime dt)
         {
             titleLabel.Text = title;
             contentLabel.Text = content;
+            label1.Text = username;
+            label2.Text = dt.ToString();    
         }
 
         private void contentLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

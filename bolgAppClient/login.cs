@@ -31,7 +31,7 @@ namespace bolgAppClient
             string password = textBox2.Text;
             int result = user.Login(email, password);
             if(result == -1) {
-                textBox1.Text = "Invalid email or password";
+                label4.Text = "Invalid email or password";
             }
             else
             {
@@ -43,6 +43,28 @@ namespace bolgAppClient
                 HomePage homePage = new HomePage();
                 homePage.Show();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Signup sn = new Signup();
+            this.Hide();
+            sn.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

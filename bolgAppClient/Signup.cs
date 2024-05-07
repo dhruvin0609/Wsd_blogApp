@@ -40,5 +40,12 @@ namespace bolgAppClient
             login l = new login();
             l.Show();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            login l = new login();
+            this.Hide();
+            l.Show();
+        }
     }
 }
